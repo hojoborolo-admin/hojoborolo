@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Physics 1st Paper | Hojoborolo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+    
+    <b:skin><![CDATA[
+    /* Mandatory Blogger Skin Tag - You can leave this empty */
+    ]]></b:skin>
+
+    <style>
+        /* --- GLOBAL STYLES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- HEADER --- */
+        .header {
+            position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+            width: 90%; max-width: 1100px; display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 35px; background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 50px; z-index: 1000;
+        }
+        .logo { color: #fff; font-size: 1.3rem; font-weight: 800; text-decoration: none; text-transform: uppercase; }
+        .logo span { color: #38bdf8; }
+        .nav-links { list-style: none; display: flex; gap: 30px; align-items: center; }
+        .nav-links a { color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: 0.3s; }
+        
+        .classes-btn {
+            background: rgba(255, 255, 255, 0.1); padding: 10px 24px; border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2); color: #fff !important; text-decoration: none;
+        }
+
+        /* --- HERO --- */
+        .course-hero {
+            padding: 160px 5% 60px;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(56, 189, 248, 0.15), transparent 60%);
+        }
+        .course-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 15px; }
+
+        /* --- LECTURE LIST --- */
+        .playlist-container { max-width: 900px; margin: 0 auto 100px; padding: 0 5%; }
+        .lecture-card {
+            display: flex; align-items: center; background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 25px;
+            margin-bottom: 15px; border-radius: 16px; transition: all 0.3s ease;
+            cursor: pointer; text-decoration: none; color: #fff;
+        }
+        .lecture-card:hover {
+            background: rgba(255, 255, 255, 0.08); border-color: #38bdf8; transform: translateX(10px);
+        }
+        .play-icon {
+            width: 40px; height: 40px; background: rgba(56, 189, 248, 0.2);
+            color: #38bdf8; border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; margin-right: 20px; flex-shrink: 0;
+        }
+        .lecture-info { flex-grow: 1; }
+        .lecture-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 5px; }
+
+        /* --- FOOTER --- */
+        .footer { background: rgba(255,255,255,0.02); padding: 60px 5% 40px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; }
+
+        @media (max-width: 600px) {
+            .nav-links li:not(:last-child) { display: none; }
+            .lecture-title { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <b:section id='main' showaddelement='yes'/>
+
+    <header class='header'>
+        <a class='logo' href='/'>Hojoborolo<span>.</span></a>
+        <ul class='nav-links'>
+            <li><a href='/'>Home</a></li>
+            <li><a class='classes-btn' href='/'>All Classes</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class='course-hero'>
+            <h1 class='course-title'>Chemistry 2nd Paper</h1>
+            <p style='color: rgba(255,255,255,0.6)'>17 Lectures Available</p>
+        </section>
+
+        <div class='playlist-container'>
+            <a class='lecture-card' href='https://www.youtube.com/live/GIxC-SIdEnw'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস - 01 : পরিমাণগত রসায়ন -০১ </div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/E-EN5UuD5YY'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'> ক্লাস -02 : পরিমাণগত রসায়ন -০২ </div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/RZfggHL19aw'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -03 : রাসায়নিক পরিবর্তন -০২ ও পরিবেশ রসায়ন</div>
+                </div>
+            </a>
+            <a class='lecture-card' href='youtube.com/live/eR35XTckK7o?si=fywed_7D_Nna3pa-'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -04 : মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন -01 </div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/wjcsfBxrrH8'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -05 : মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন -02 </div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/4_tPNG1MQ_E'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'> ক্লাস -06: পরিবেশ রসায়ন -01</div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/SkvpYDSHNxQ'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'> ক্লাস -07: পরিবেশ রসায়ন -02</div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/RRCYkfX8f_0'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'> ক্লাস -08: তড়িৎ রসায়ন -01</div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/M8cbP0V8WMI'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'> ক্লাস -09:  তড়িৎ রসায়ন -02 +  কর্ম... রসায়ন</div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/FYvD52Mb_Es'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -11: জৈব যৌগ -1.1   </div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/Yxr_zCNfUB4'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -11: জৈব যৌগ -1.2 </div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/xa4qE6UXcY8'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -11: জৈব যৌগ -1.3  </div>
+                </div>
+            </a>
+            <a class='lecture-card' href='https://www.youtube.com/live/IThndQxmVqU'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -11: জৈব যৌগ -1.4  </div>
+                </div>
+            </a>
+          
+           <a class='lecture-card' href='https://www.youtube.com/live/OBxFQBsr094'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -12: জৈব যৌগ -2.1  </div>
+                </div>
+            </a>
+           <a class='lecture-card' href='https://www.youtube.com/live/PDjsRn7YE_I'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -12: জৈব যৌগ -2.2  </div>
+                </div>
+            </a>
+           <a class='lecture-card' href='https://www.youtube.com/live/zdI0ymVmVdY'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -12: জৈব যৌগ -2.3  </div>
+                </div>
+            </a>
+           <a class='lecture-card' href='https://www.youtube.com/live/YK1XaMWNnw0'>
+                <div class='play-icon'>▶</div>
+                <div class='lecture-info'>
+                    <div class='lecture-title'>ক্লাস -12: জৈব যৌগ -2.4  </div>
+                </div>
+            </a>
+          
+          
+          
+          
+          
+          
+          
+        </div>
+    </main>
+
+    <footer class='footer'>
+        <p>&copy; 2026 Hojoborolo Labs.</p>
+    </footer>
+
+</body>
+</html>

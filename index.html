@@ -164,7 +164,10 @@
 .footer-links { 
     list-style: none; 
     margin-top: 15px; 
-    padding: 0; /* Remove default padding to ensure true centering */
+    padding: 0; 
+    display: flex; /* Adds flexible alignment */
+    flex-direction: column; /* Keeps them in a list */
+    align-items: center; /* Centers the links under the heading */
 }
 
 .footer-links li { 
